@@ -18,8 +18,14 @@ computerMoves = ['rock', 'paper', 'scissors'];  // Moves computer can choose fro
 
 // Load the LocalStorage
 window.addEventListener('load', () => {
-    userScore.innerHTML = localStorage.setItem('userScore');
-    compScore.innerHTML = localStorage.setItem('compScore');
+    if(localStorage.getItem('userScore') != 'NaN'){
+        localStorage.setItem('userScore');
+        localStorage.setItem('compScore');
+    }
+    setTimeout(function() {
+        userScore.innerHTML = localStorage.setItem('userScore');
+        compScore.innerHTML = localStorage.setItem('compScore');
+    }, 50);
 });
 
 // Open the Game Rules
