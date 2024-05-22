@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Module Project</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="score-wrapper">
+            <div class="score-container">
+                <div class="score-label">
+                    <p>COMPUTER</p>
+                    <p>SCORE</p>
+                </div>
+                <div class="score" id="user-score">0</div>
+            </div>
+            <div class="score-container">
+                <div class="score-label">
+                    <p>YOUR</p>
+                    <p>SCORE</p>
+                </div>
+                <div class="score" id="comp-score">0</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="input">
+        <div class="rock" onclick="console.log(result('rock'))"><img src="./assets/rock.svg" alt="rock"></div>
+        <div class="paper" onclick="console.log(result('paper'))"><img src="./assets/paper.svg" alt="paper"></div>
+        <div class="scissors" onclick="console.log(result('scissors'))"><img src="./assets/scissors.svg" alt="scissors"></div>
+
+        <div class="line1"><img src="./assets/line.svg" alt="line"></div>
+        <div class="line2"><img src="./assets/line.svg" alt="line"></div>
+        <div class="line3"><img src="./assets/line.svg" alt="line"></div>
+    </div>
+
+    <div class="show-winner-container">
+        <div class="moves" id="user-moves">
+            <p id="you-picked">YOU PICKED</p>
+            <img class="user-pick" src="./assets/paper-won.svg" alt="">
+        </div>
+
+        <div class="details-container">
+            <p class="round-details-title">YOU WON</p>
+            <P class="round-details-extra">AGAINST PC</P>
+            <button class="play-again-index">PLAY AGAIN</button>
+        </div>
+
+        <div class="moves" id="comp-moves">
+            <p id="pc-picked">PC PICKED</p>
+            <img class="comp-pick" src="./assets/scissor-won.svg" alt="">
+        </div>
+    </div>
+
+    <div class="btns">
+        <button class="btn" id="rules-btn">RULES</button>
+        <button class="btn" id="next-btn"><a href="./congratulation.html">NEXT</a></button>
+    </div>
+    <div class="rules-container">
+        <div class="close-btn">X</div>
+        <h1>Game Rules</h1>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>

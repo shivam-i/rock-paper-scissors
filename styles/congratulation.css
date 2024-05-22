@@ -1,0 +1,132 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+* {
+    font-family: "Roboto", sans-serif;
+
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+
+    --bg-color: #8CC461;
+    --rules-bg-color: #004429;
+
+    color: white;
+
+    border: none;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    height: 80vh;
+
+    margin: 30px 0;
+}
+
+.stars-cup {
+    width: 35vw;
+    margin-bottom: 30px;
+    padding-right: 2%;
+}
+
+.hurray {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.you-won-the-game {
+    font-size: 2.1rem;
+}
+
+.play-again {
+    width: max-content;
+    margin: 100px;
+    padding: 12px 40px;
+    border-radius: 12px;
+} .play-again > a {
+    color: black;
+}
+
+.btns {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+
+    background-color: inherit;
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    border: white solid 2px;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+#rules-btn {
+    display: inline;
+}
+
+.rules-container {
+    display: none;
+    flex-direction: column;
+
+    width: 20%;
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+
+    background-color: var(--rules-bg-color);
+    padding: 20px;
+
+    border: 4px solid white;
+    border-radius: 12px;
+}
+
+.rules-container > ul {
+    list-style: circle;
+    list-style-type: none;
+}
+
+.rules-container > ul > li {
+    margin: 15px 0 15px 15px
+}
+
+.rules-container > ul > li::before {
+    content: "▪";
+    color: yellow;
+
+    position: absolute;
+    left: 20px;
+}
+
+.rules-container > h1 {
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    right: -12px;
+    top: -20px;
+    background-color: red;
+    width: max-content;
+
+    padding: 7px 12px;
+
+    border-radius: 50%;
+    border: 4px solid white;
+}
