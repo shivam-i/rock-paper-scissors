@@ -18,6 +18,11 @@ computerMoves = ['rock', 'paper', 'scissors'];  // Moves computer can choose fro
 
 // Load the LocalStorage
 window.addEventListener('load', () => {
+    if(localStorage.length === 0){
+        userScore.innerHTML = localStorage.setItem('userScore', 0);
+        compScore.innerHTML = localStorage.setItem('compScore', 0);
+    }
+    
     userScore.innerHTML = localStorage.getItem('userScore');
     compScore.innerHTML = localStorage.getItem('compScore');
 });
